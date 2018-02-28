@@ -77,24 +77,5 @@ export default ({ config, db}) => {
 
 
 
-    /*  // '/v1/foodtruck/:id' - PUT - update an existing record
-    api.put('/:id', (req, res) => {
-        FoodTruck.findById(req.params.id, (err, foodtruck) => {
-            if (err) {
-            res.send(err);
-            }
-            foodtruck.name = req.body.name;
-            foodtruck.foodtype = req.body.foodtype;
-            foodtruck.avgcost = req.body.avgcost;
-            foodtruck.geometry.coordinates = req.body.geometry.coordinates;
-            foodtruck.save(function(err) {
-            if (err) {
-                res.send(err);
-            }
-            res.json({ message: 'Food Truck info updated' });
-            });
-        });
-    });*/
-
     return api;
 }
